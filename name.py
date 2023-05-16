@@ -7,4 +7,4 @@ print('So you enter this information:\n' +
  'Lastname: ' + lastname + '\n'+ 
  'Great to see that you\'re ' + profession
   )
-input('press any key to exit the program')
+input('press any key to exit the program ')
