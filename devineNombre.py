@@ -16,6 +16,7 @@ while True:
     choix = int(input("Entrez le nombre à deviner : "))
     if choix == nbr: 
         print("Bravo vous avez entré la bonne valeur\n")
+        break
     elif choix < nbr:
         print("Vous avez entré une valeur en dessous du nombre à deviner\n")
     else:
