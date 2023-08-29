@@ -41,7 +41,7 @@ def menu():
     print("3- Get the details of a book")
     print('4- Borrow a book')
     print("5- delete a book")
-
+    print('6- cancel the program')
 i = 0
 
 def showAllBooks():
@@ -115,3 +115,5 @@ while True:
         input("Tap any key to continue")
         cls()
     
+    if choice == 6:
+        break
