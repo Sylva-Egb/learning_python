@@ -1,4 +1,3 @@
-""" import author """
 import os
 books = []
 
@@ -93,10 +92,26 @@ while True:
         cls()
     
     if choice == 4:
+        borrowable_books = []
+        i = 0
+        print('List of the available books')
+        for book in books:
+            if book._available == 'y':
+                print(f"{i+1}- {book._title}")
+                borrowable_books.append(book)
+                i+=1
+        choice = int(input("Enter the number of the book you want to borrow : "))
+        borrowable_books[choice-1]._available = 'n'
+        print(f'{borrowable_books[choice-1]._title} had been borrowed successfully')
         input("Tap any key to continue")
         cls()
 
     if choice == 5:
+        showAllBooks()
+        choice = int(input())
+        del books[choice-1]
+        print('successfully deleted. \n\nHere is the new list ;)')
+        showAllBooks()
         input("Tap any key to continue")
         cls()
     
