@@ -1,10 +1,17 @@
 #import the os library
 import os
 
+#using selenium package
+from selenium import webdriver
+
 #define the variables
 contacts = []
 path_to_file = "contacts.csv"
 to_continue = True
+driver_path = "chromedriver_win32/chromedriver.exe"
+driver = webdriver.Chrome(driver_path)
+
+
 
 #function to clean up the cmd 
 def cls():
