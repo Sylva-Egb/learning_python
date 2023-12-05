@@ -8,7 +8,9 @@ from selenium import webdriver
 contacts = []
 path_to_file = "contacts.csv"
 to_continue = True
-driver_path = "chromedriver_win32/chromedriver.exe"
+
+#make sure you specify your  own webdriver path
+driver_path = "chromedriver_win32/chromedriver.exe"#should be modify
 driver = webdriver.Chrome(driver_path)
 
 
